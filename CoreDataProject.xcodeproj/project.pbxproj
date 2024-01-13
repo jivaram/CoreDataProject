@@ -16,6 +16,9 @@
 		1083CD5E2B4DA6FD00D13A76 /* CoreDataProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083CD5D2B4DA6FD00D13A76 /* CoreDataProjectTests.swift */; };
 		1083CD682B4DA6FD00D13A76 /* CoreDataProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083CD672B4DA6FD00D13A76 /* CoreDataProjectUITests.swift */; };
 		1083CD6A2B4DA6FD00D13A76 /* CoreDataProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083CD692B4DA6FD00D13A76 /* CoreDataProjectUITestsLaunchTests.swift */; };
+		1083CD842B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1083CD822B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld */; };
+		1083CD852B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1083CD822B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld */; };
+		1083CD862B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1083CD822B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		1083CD632B4DA6FD00D13A76 /* CoreDataProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1083CD672B4DA6FD00D13A76 /* CoreDataProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITests.swift; sourceTree = "<group>"; };
 		1083CD692B4DA6FD00D13A76 /* CoreDataProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1083CD832B4DBC3C00D13A76 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				1083CD4F2B4DA6FD00D13A76 /* Assets.xcassets */,
 				1083CD512B4DA6FD00D13A76 /* LaunchScreen.storyboard */,
 				1083CD542B4DA6FD00D13A76 /* Info.plist */,
+				1083CD822B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			files = (
 				1083CD4B2B4DA6E400D13A76 /* ViewController.swift in Sources */,
 				1083CD472B4DA6E400D13A76 /* AppDelegate.swift in Sources */,
+				1083CD842B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld in Sources */,
 				1083CD492B4DA6E400D13A76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1083CD852B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld in Sources */,
 				1083CD5E2B4DA6FD00D13A76 /* CoreDataProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +285,7 @@
 			files = (
 				1083CD682B4DA6FD00D13A76 /* CoreDataProjectUITests.swift in Sources */,
 				1083CD6A2B4DA6FD00D13A76 /* CoreDataProjectUITestsLaunchTests.swift in Sources */,
+				1083CD862B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -454,6 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = jiva.com.CoreDataProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -469,6 +479,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -481,6 +492,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = jiva.com.CoreDataProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -601,6 +613,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1083CD822B4DBC3C00D13A76 /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1083CD832B4DBC3C00D13A76 /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = 1083CD832B4DBC3C00D13A76 /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1083CD3B2B4DA6E400D13A76 /* Project object */;
 }
