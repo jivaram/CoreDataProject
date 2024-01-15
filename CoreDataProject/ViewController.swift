@@ -64,9 +64,38 @@ extension ViewController {
             let result = try manageContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject] {
                 print(data.value(forKey: "username") as! String)
+                print(data.value(forKey: "password") as! String)
+                print(data.value(forKey: "email") as! String)
             }
         } catch {
             print("fetching faild...")
+        }
+        updateData()
+    }
+}
+
+extension ViewController {
+    func updateData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            print("Error: AppDelegate is nil")
+            return
+        }
+        let manageContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "UserEntity")
+        fetchRequest.predicate = NSPredicate(format: "username = %@", "Jiva Ram 1")
+        do{
+            let test = try manageContext.fetch(fetchRequest)
+                let objectUpdate = test[0] as! NSManagedObject
+            objectUpdate.setValue("newName", forKey: "username")
+            objectUpdate.setValue("newPass", forKey: "password")
+            objectUpdate.setValue("newEmail", forKey: "email")
+            do {
+                try manageContext.save()
+            } catch {
+                print(error)
+            }
+        } catch {
+            print(error)
         }
     }
 }
